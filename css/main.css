@@ -1,0 +1,60 @@
+body {
+  padding-top: 50px;
+  color: #303030;
+  background-color: #eeeeee;
+  	text-align: center;
+	font-family: Verdana,Geneva,sans-serif; 
+	font-size: 20px;
+}
+
+.SectionHeader
+{
+	padding-bottom:8px;
+	border-bottom:1px solid #303030;
+	font-weight: bold;
+}
+.Listing
+{
+	text-align: left;
+	font-size: 20px;
+	font-weight: 300px;
+}
+
+.ImageGroup
+{
+	position: relative;
+	
+	height: 250px;
+	width: 250px;
+	object-fit: scale-down;
+	overflow: hidden;
+	border-bottom: 30px;
+
+}
+
+.ImageGroup .ImageGroupText
+{
+	position: absolute;
+	top: 25%;
+	left:0;
+	right:0;
+	bottom:0; 
+	color: #ffffff;
+	opacity: 0.95;
+	font-weight: bold;
+
+
+}
+.ImageGroup .ImageGroupTextDark
+{
+	position: absolute;
+	top: 35%;
+	left:0%;
+	right:0;
+	bottom:0; 
+	color: #000000;
+	opacity: 0.95;
+	font-weight: bold;
+
+
+}
