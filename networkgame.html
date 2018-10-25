@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Portfolio</title>
+    <title>Network game</title>
   </head>
   <body>
     
@@ -18,19 +18,25 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#home">Alex Weber</a>
+      <a class="navbar-brand" href="index.html#home">Alex Weber</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#home">Portfolio</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-
-      
+      <li class="active"><a href="index.html#home">Portfolio</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
     </ul>
   </div>
 </nav>
  
 
-    
+<div class="SiteSection" id="about">
+  <div class="container">
+    <h1 class="SectionHeader">Network game</h1>  
+    <p>This project was created for the advanced games programming module during my time at university. The task was to create an underwater multiplayer game using <b>C++, Urho3D, & Visual Studio</b>. My idea was a simple game where players would swim around an underwater level and compete to collect the most fish.The fish use an implementation of <b>Boids</b> to navigate around the map and stay together in schools. The server handles most of the functions that occur within the game and triggers remote events to update the client on what is happening, for example when a play collects a fish the server registers that and updates that player's score variable before packing that into an event and sending it to the player. After that the fish object is deleted from the server scene which leads to that fish disappearing for all connected clients. Once a player collects enough fish to pass the score threshold two events are triggered by the server, the first goes out to the winning player to inform them they have won and the second goes out to the other plays to inform them that the game is over.</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2ork1sVrIgE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
   </body>
 </html>

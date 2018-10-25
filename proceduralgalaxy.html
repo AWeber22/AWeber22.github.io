@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Portfolio</title>
+    <title>Procedural Galaxy</title>
   </head>
   <body>
     
@@ -18,19 +18,24 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#home">Alex Weber</a>
+      <a class="navbar-brand" href="index.html#home">Alex Weber</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#home">Portfolio</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-
-      
+      <li class="active"><a href="index.html#home">Portfolio</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
     </ul>
   </div>
 </nav>
  
+<div class="SiteSection" id="about">
+  <div class="container">
+    <h1 class="SectionHeader">Procedural Galaxy</h1>  
+    <p>This project was completed for the procedural content generation module during my time at university. I was tasked with using <b>C# & Unity</b> to create a procedurally generated interactive space themed diorama, I decided to create a program which makes a new galaxy each time it is ran. In order to complete this I created a number of scripts to generate stars, planets, and moons. The stars are created using an offset, an angle, a distance, and a scale value which are all randomized on each run. When each star is generated it also has data attached to it which specifies how many planets orbit the star and the planets have data which specifies how many moons and spaceships the planet will have in orbit. When the player clicks on a star the scene changes to that star and the planets and moons are generated in a similar but simpler way than than how the whole galaxy is generated. The player can then press Escape to return the main galaxy scene and view a new star or the same as previously viewed and it will still be the same as previously.</p>
 
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/YCfk_kgj4pA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
     
   </body>
 </html>

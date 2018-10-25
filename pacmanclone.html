@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Portfolio</title>
+    <title>Pacman Clone</title>
   </head>
   <body>
     
@@ -18,19 +18,24 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#home">Alex Weber</a>
+      <a class="navbar-brand" href="index.html#home">Alex Weber</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#home">Portfolio</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-
-      
+      <li class="active"><a href="index.html#home">Portfolio</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
     </ul>
   </div>
 </nav>
  
+<div class="SiteSection" id="about">
+  <div class="container">
+    <h1 class="SectionHeader">Pacman clone</h1>  
+    <p>This project was created for the games programming module during my time at university. I was tasked with using <b>C++, SDL, & Visual Studio</b> to create a clone of pacman. This was a simple project but was still enjoyable to complete. My favourite aspect of this project was how I created the play area, I used a two-demensional array of numbers from zero to three. In this array zeros were the walls, ones were the collectables, twos were the enemies, and three was where the player spawned. When the game was loaded a nested For loop ran through the array to populate the playspace. The game had a score tracker which increased for each orb the player collected, the player and enemies had basic animations in place, and the enemies used a random number generator to decide where they would move next.</p>
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0CtLZ1OYdX8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
     
   </body>
 </html>

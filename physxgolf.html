@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Portfolio</title>
+    <title>PhysX Golf</title>
   </head>
   <body>
     
@@ -18,19 +18,24 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#home">Alex Weber</a>
+      <a class="navbar-brand" href="index.html#home">Alex Weber</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#home">Portfolio</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-
-      
+      <li class="active"><a href="index.html#home">Portfolio</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
     </ul>
   </div>
 </nav>
- 
 
+<div class="SiteSection" id="about">
+  <div class="container">
+    <h1 class="SectionHeader">PhysX golf</h1>  
+    <p>This project was completed for the physics simulation module during my time at university. I was tasked with using <b>C++, PhysX, & Visual Studio</b> to create realistic physics based golf game. The boundaries of the course were static objects so that the ball could bounce off of them properly but not apply any forces to the boundaries themselves. The course had a number of obstacles including a ramp, a sandy area, pegs in the course, and a spinning wall near the end of the course. The player controlled the golf ball using keyboard inputs, holding I would increase the power and holding K would decrease it, then the player hits the ball using Space. This game made use of PhysX collision boxes for the hole, differing materials to increase friction in the sand area, and revolute joints to spin the rotating wall at the end of the course. This game did end up with one main issue which was that I was unable to solve at the time and that was getting the camera to properly track around the ball so in the current version the player has to use the free camera to take shots.</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jWHueJ47CPY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
     
   </body>
 </html>

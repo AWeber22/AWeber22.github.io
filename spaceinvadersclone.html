@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Portfolio</title>
+    <title>Space invaders clone</title>
   </head>
   <body>
     
@@ -18,19 +18,25 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#home">Alex Weber</a>
+      <a class="navbar-brand" href="index.html#home">Alex Weber</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#home">Portfolio</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-
-      
+      <li class="active"><a href="index.html#home">Portfolio</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
     </ul>
   </div>
 </nav>
- 
 
-    
+    <div class="SiteSection" id="about">
+  <div class="container">
+    <h1 class="SectionHeader">Space invaders clone</h1>  
+    <p>This project was completed for the graphics module during my time at university. I was tasked with using <b>C++, OpenGL, SDL, & Visual Studio</b> to create a clone of Space Invaders. It was originally intended to use a model loader to load the textures into the game but this didn't seem to function for me so I hand coded all of the verticies and indicies required to create the player, enemies, bullets, barriers, and walls within the game. This project had two different stages, firstly I had to create a 2D implementation of the game and then later I was tasked with modifying it from 2D to 3D. The mechanics of the game itself were rather simpe, collision checks were the basis of everything within the scene. If the player fired a shot and it collided with an enemy that enemy was deleted and the score was increased, if the enemy shot the player they lost a life or died if they have no lives left, if the enemy shoots or collides with a barrier it disappears, and finally if the enemies manage to collide with the player they automatically lose. The visuals of this project weren't important which is why in the 3D version all of the sides of the game objects use the same texture which looks unusual but it functioned as needed for the aim of the project.</p>
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/ZGY2ZPDeznE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/RwQVLHnEVCA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
   </body>
 </html>
